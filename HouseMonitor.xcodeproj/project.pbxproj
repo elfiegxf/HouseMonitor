@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6D209172C60022C39D /* AppDelegate.swift */; };
-		AEA6AB70209172C60022C39D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6F209172C60022C39D /* ViewController.swift */; };
+		AEA6AB70209172C60022C39D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6F209172C60022C39D /* TableViewController.swift */; };
 		AEA6AB73209172C60022C39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB71209172C60022C39D /* Main.storyboard */; };
 		AEA6AB76209172C60022C39D /* HouseMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB74209172C60022C39D /* HouseMonitor.xcdatamodeld */; };
 		AEA6AB78209172C80022C39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB77209172C80022C39D /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		AEA6AB6A209172C60022C39D /* HouseMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA6AB6D209172C60022C39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEA6AB6F209172C60022C39D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEA6AB6F209172C60022C39D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		AEA6AB72209172C60022C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEA6AB75209172C60022C39D /* HouseMonitor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HouseMonitor.xcdatamodel; sourceTree = "<group>"; };
 		AEA6AB77209172C80022C39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +76,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE176B86209225E8000E19F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE176B87209225F5000E19F5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEA6AB6F209172C60022C39D /* TableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AE176B8820922607000E19F5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AEA6AB71209172C60022C39D /* Main.storyboard */,
+				AEA6AB79209172C80022C39D /* LaunchScreen.storyboard */,
+				AEA6AB77209172C80022C39D /* Assets.xcassets */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		AEA6AB61209172C60022C39D = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				AEA6AB6D209172C60022C39D /* AppDelegate.swift */,
-				AEA6AB6F209172C60022C39D /* ViewController.swift */,
-				AEA6AB71209172C60022C39D /* Main.storyboard */,
-				AEA6AB77209172C80022C39D /* Assets.xcassets */,
-				AEA6AB79209172C80022C39D /* LaunchScreen.storyboard */,
+				AE176B8820922607000E19F5 /* view */,
+				AE176B87209225F5000E19F5 /* controller */,
+				AE176B86209225E8000E19F5 /* Model */,
 				AEA6AB7C209172C90022C39D /* Info.plist */,
 				AEA6AB74209172C60022C39D /* HouseMonitor.xcdatamodeld */,
 			);
@@ -259,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEA6AB70209172C60022C39D /* ViewController.swift in Sources */,
+				AEA6AB70209172C60022C39D /* TableViewController.swift in Sources */,
 				AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */,
 				AEA6AB76209172C60022C39D /* HouseMonitor.xcdatamodeld in Sources */,
 			);
