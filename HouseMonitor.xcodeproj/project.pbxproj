@@ -15,6 +15,7 @@
 		AEA6AB7B209172C90022C39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB79209172C80022C39D /* LaunchScreen.storyboard */; };
 		AEA6AB86209172C90022C39D /* HouseMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB85209172C90022C39D /* HouseMonitorTests.swift */; };
 		AEA6AB91209172C90022C39D /* HouseMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB90209172C90022C39D /* HouseMonitorUITests.swift */; };
+		AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE45320923A6300C3C78E /* BorderRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AEA6AB8C209172C90022C39D /* HouseMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HouseMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA6AB90209172C90022C39D /* HouseMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseMonitorUITests.swift; sourceTree = "<group>"; };
 		AEA6AB92209172C90022C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEBEE45320923A6300C3C78E /* BorderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,26 +81,27 @@
 		AE176B86209225E8000E19F5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AEBEE45320923A6300C3C78E /* BorderRouter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		AE176B87209225F5000E19F5 /* controller */ = {
+		AE176B87209225F5000E19F5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				AEA6AB6F209172C60022C39D /* TableViewController.swift */,
 			);
-			path = controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		AE176B8820922607000E19F5 /* view */ = {
+		AE176B8820922607000E19F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				AEA6AB71209172C60022C39D /* Main.storyboard */,
 				AEA6AB79209172C80022C39D /* LaunchScreen.storyboard */,
 				AEA6AB77209172C80022C39D /* Assets.xcassets */,
 			);
-			path = view;
+			path = View;
 			sourceTree = "<group>";
 		};
 		AEA6AB61209172C60022C39D = {
@@ -125,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				AEA6AB6D209172C60022C39D /* AppDelegate.swift */,
-				AE176B8820922607000E19F5 /* view */,
-				AE176B87209225F5000E19F5 /* controller */,
+				AE176B8820922607000E19F5 /* View */,
+				AE176B87209225F5000E19F5 /* Controller */,
 				AE176B86209225E8000E19F5 /* Model */,
 				AEA6AB7C209172C90022C39D /* Info.plist */,
 				AEA6AB74209172C60022C39D /* HouseMonitor.xcdatamodeld */,
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */,
 				AEA6AB70209172C60022C39D /* TableViewController.swift in Sources */,
 				AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */,
 				AEA6AB76209172C60022C39D /* HouseMonitor.xcdatamodeld in Sources */,
