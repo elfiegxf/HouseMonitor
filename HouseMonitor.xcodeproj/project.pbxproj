@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BEF44ED3F1BAF308C12D041 /* Pods_HouseMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58540C237AA9B240539E3D04 /* Pods_HouseMonitor.framework */; };
+		867F65E7AF5436F4BEFFA982 /* Pods_HouseMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E8D30B2979404DD97FBB76 /* Pods_HouseMonitorUITests.framework */; };
+		A909DDCB269437BE25DF2006 /* Pods_HouseMonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB566DDE605B5FD6CEEEC87 /* Pods_HouseMonitorTests.framework */; };
 		AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6D209172C60022C39D /* AppDelegate.swift */; };
-		AEA6AB70209172C60022C39D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6F209172C60022C39D /* TableViewController.swift */; };
+		AEA6AB70209172C60022C39D /* BRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6F209172C60022C39D /* BRViewController.swift */; };
 		AEA6AB73209172C60022C39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB71209172C60022C39D /* Main.storyboard */; };
 		AEA6AB76209172C60022C39D /* HouseMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB74209172C60022C39D /* HouseMonitor.xcdatamodeld */; };
 		AEA6AB78209172C80022C39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB77209172C80022C39D /* Assets.xcassets */; };
@@ -16,6 +19,7 @@
 		AEA6AB86209172C90022C39D /* HouseMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB85209172C90022C39D /* HouseMonitorTests.swift */; };
 		AEA6AB91209172C90022C39D /* HouseMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB90209172C90022C39D /* HouseMonitorUITests.swift */; };
 		AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE45320923A6300C3C78E /* BorderRouter.swift */; };
+		AEBEE45A209281A900C3C78E /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE459209281A900C3C78E /* SensorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C1DCA57DC659862D8A7DA2 /* Pods-HouseMonitorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitorTests/Pods-HouseMonitorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D19956D4425F2983FB193EB /* Pods-HouseMonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitorUITests/Pods-HouseMonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		11B3C055764DCD4D042FB454 /* Pods-HouseMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitor/Pods-HouseMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		58540C237AA9B240539E3D04 /* Pods_HouseMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE9C8F368FC0E8E34E97571 /* Pods-HouseMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitorTests/Pods-HouseMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		79E8D30B2979404DD97FBB76 /* Pods_HouseMonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseMonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A045E0C3ED42545A5BD5CE3 /* Pods-HouseMonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitorUITests/Pods-HouseMonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA6AB6A209172C60022C39D /* HouseMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA6AB6D209172C60022C39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEA6AB6F209172C60022C39D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AEA6AB6F209172C60022C39D /* BRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRViewController.swift; sourceTree = "<group>"; };
 		AEA6AB72209172C60022C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEA6AB75209172C60022C39D /* HouseMonitor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HouseMonitor.xcdatamodel; sourceTree = "<group>"; };
 		AEA6AB77209172C80022C39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +62,9 @@
 		AEA6AB90209172C90022C39D /* HouseMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseMonitorUITests.swift; sourceTree = "<group>"; };
 		AEA6AB92209172C90022C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEBEE45320923A6300C3C78E /* BorderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRouter.swift; sourceTree = "<group>"; };
+		AEBEE459209281A900C3C78E /* SensorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
+		B3273E3799F2CB9E723652AB /* Pods-HouseMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitor/Pods-HouseMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		ECB566DDE605B5FD6CEEEC87 /* Pods_HouseMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEF44ED3F1BAF308C12D041 /* Pods_HouseMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A909DDCB269437BE25DF2006 /* Pods_HouseMonitorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867F65E7AF5436F4BEFFA982 /* Pods_HouseMonitorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +106,8 @@
 		AE176B87209225F5000E19F5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AEA6AB6F209172C60022C39D /* TableViewController.swift */,
+				AEA6AB6F209172C60022C39D /* BRViewController.swift */,
+				AEBEE459209281A900C3C78E /* SensorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +129,8 @@
 				AEA6AB84209172C90022C39D /* HouseMonitorTests */,
 				AEA6AB8F209172C90022C39D /* HouseMonitorUITests */,
 				AEA6AB6B209172C60022C39D /* Products */,
+				C7688A8B021C4F21FA106A21 /* Pods */,
+				F20B7DFD859A070E6EA6A18A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +175,29 @@
 			path = HouseMonitorUITests;
 			sourceTree = "<group>";
 		};
+		C7688A8B021C4F21FA106A21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11B3C055764DCD4D042FB454 /* Pods-HouseMonitor.debug.xcconfig */,
+				B3273E3799F2CB9E723652AB /* Pods-HouseMonitor.release.xcconfig */,
+				00C1DCA57DC659862D8A7DA2 /* Pods-HouseMonitorTests.debug.xcconfig */,
+				6FE9C8F368FC0E8E34E97571 /* Pods-HouseMonitorTests.release.xcconfig */,
+				7A045E0C3ED42545A5BD5CE3 /* Pods-HouseMonitorUITests.debug.xcconfig */,
+				0D19956D4425F2983FB193EB /* Pods-HouseMonitorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F20B7DFD859A070E6EA6A18A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58540C237AA9B240539E3D04 /* Pods_HouseMonitor.framework */,
+				ECB566DDE605B5FD6CEEEC87 /* Pods_HouseMonitorTests.framework */,
+				79E8D30B2979404DD97FBB76 /* Pods_HouseMonitorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEA6AB95209172C90022C39D /* Build configuration list for PBXNativeTarget "HouseMonitor" */;
 			buildPhases = (
+				B0609177497E7D93DEBB4C46 /* [CP] Check Pods Manifest.lock */,
 				AEA6AB66209172C60022C39D /* Sources */,
 				AEA6AB67209172C60022C39D /* Frameworks */,
 				AEA6AB68209172C60022C39D /* Resources */,
+				67EE3FB322FCB37370EE6B29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEA6AB98209172C90022C39D /* Build configuration list for PBXNativeTarget "HouseMonitorTests" */;
 			buildPhases = (
+				0EFE93DC658693AADB375460 /* [CP] Check Pods Manifest.lock */,
 				AEA6AB7D209172C90022C39D /* Sources */,
 				AEA6AB7E209172C90022C39D /* Frameworks */,
 				AEA6AB7F209172C90022C39D /* Resources */,
@@ -197,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEA6AB9B209172C90022C39D /* Build configuration list for PBXNativeTarget "HouseMonitorUITests" */;
 			buildPhases = (
+				9E68C61BDDB57979FCD7DD36 /* [CP] Check Pods Manifest.lock */,
 				AEA6AB88209172C90022C39D /* Sources */,
 				AEA6AB89209172C90022C39D /* Frameworks */,
 				AEA6AB8A209172C90022C39D /* Resources */,
@@ -281,13 +328,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EFE93DC658693AADB375460 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HouseMonitorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67EE3FB322FCB37370EE6B29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HouseMonitor/Pods-HouseMonitor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KLCPopup/KLCPopup.framework",
+				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/PNChart/PNChart.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLCPopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PNChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HouseMonitor/Pods-HouseMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E68C61BDDB57979FCD7DD36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HouseMonitorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0609177497E7D93DEBB4C46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HouseMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEA6AB66209172C60022C39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBEE45A209281A900C3C78E /* SensorViewController.swift in Sources */,
 				AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */,
-				AEA6AB70209172C60022C39D /* TableViewController.swift in Sources */,
+				AEA6AB70209172C60022C39D /* BRViewController.swift in Sources */,
 				AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */,
 				AEA6AB76209172C60022C39D /* HouseMonitor.xcdatamodeld in Sources */,
 			);
@@ -460,15 +593,13 @@
 		};
 		AEA6AB96209172C90022C39D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B3C055764DCD4D042FB454 /* Pods-HouseMonitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -478,15 +609,13 @@
 		};
 		AEA6AB97209172C90022C39D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3273E3799F2CB9E723652AB /* Pods-HouseMonitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -496,17 +625,14 @@
 		};
 		AEA6AB99209172C90022C39D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C1DCA57DC659862D8A7DA2 /* Pods-HouseMonitorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -517,17 +643,14 @@
 		};
 		AEA6AB9A209172C90022C39D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FE9C8F368FC0E8E34E97571 /* Pods-HouseMonitorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -538,16 +661,13 @@
 		};
 		AEA6AB9C209172C90022C39D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A045E0C3ED42545A5BD5CE3 /* Pods-HouseMonitorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -558,16 +678,13 @@
 		};
 		AEA6AB9D209172C90022C39D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D19956D4425F2983FB193EB /* Pods-HouseMonitorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
