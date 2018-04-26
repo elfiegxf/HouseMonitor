@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6BEF44ED3F1BAF308C12D041 /* Pods_HouseMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58540C237AA9B240539E3D04 /* Pods_HouseMonitor.framework */; };
+		75940E921AF260A533140FD1 /* Pods_HouseMonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4612092987B00C3C78E /* Pods_HouseMonitorTests.framework */; };
 		867F65E7AF5436F4BEFFA982 /* Pods_HouseMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E8D30B2979404DD97FBB76 /* Pods_HouseMonitorUITests.framework */; };
 		A909DDCB269437BE25DF2006 /* Pods_HouseMonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB566DDE605B5FD6CEEEC87 /* Pods_HouseMonitorTests.framework */; };
 		AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6D209172C60022C39D /* AppDelegate.swift */; };
@@ -20,6 +21,15 @@
 		AEA6AB91209172C90022C39D /* HouseMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB90209172C90022C39D /* HouseMonitorUITests.swift */; };
 		AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE45320923A6300C3C78E /* BorderRouter.swift */; };
 		AEBEE45A209281A900C3C78E /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE459209281A900C3C78E /* SensorViewController.swift */; };
+		AEBEE45C2092987B00C3C78E /* KLCPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE45B2092987B00C3C78E /* KLCPopup.framework */; };
+		AEBEE45E2092987B00C3C78E /* MMDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE45D2092987B00C3C78E /* MMDrawerController.framework */; };
+		AEBEE4602092987B00C3C78E /* PNChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE45F2092987B00C3C78E /* PNChart.framework */; };
+		AEBEE4622092987B00C3C78E /* Pods_HouseMonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4612092987B00C3C78E /* Pods_HouseMonitorTests.framework */; };
+		AEBEE4642092987B00C3C78E /* Pods_HouseMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4632092987B00C3C78E /* Pods_HouseMonitorUITests.framework */; };
+		AEBEE4662092987B00C3C78E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4652092987B00C3C78E /* Realm.framework */; };
+		AEBEE4682092987B00C3C78E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4672092987B00C3C78E /* RealmSwift.framework */; };
+		AEBEE46A2092987B00C3C78E /* UICountingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4692092987B00C3C78E /* UICountingLabel.framework */; };
+		FA57DB1EE8FABC6AFF07E2C4 /* Pods_HouseMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4632092987B00C3C78E /* Pods_HouseMonitorUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +73,14 @@
 		AEA6AB92209172C90022C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEBEE45320923A6300C3C78E /* BorderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRouter.swift; sourceTree = "<group>"; };
 		AEBEE459209281A900C3C78E /* SensorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
+		AEBEE45B2092987B00C3C78E /* KLCPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KLCPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBEE45D2092987B00C3C78E /* MMDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBEE45F2092987B00C3C78E /* PNChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PNChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBEE4612092987B00C3C78E /* Pods_HouseMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HouseMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBEE4632092987B00C3C78E /* Pods_HouseMonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HouseMonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBEE4652092987B00C3C78E /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBEE4672092987B00C3C78E /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBEE4692092987B00C3C78E /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3273E3799F2CB9E723652AB /* Pods-HouseMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitor/Pods-HouseMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		ECB566DDE605B5FD6CEEEC87 /* Pods_HouseMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +90,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBEE45C2092987B00C3C78E /* KLCPopup.framework in Frameworks */,
+				AEBEE45E2092987B00C3C78E /* MMDrawerController.framework in Frameworks */,
+				AEBEE4602092987B00C3C78E /* PNChart.framework in Frameworks */,
+				AEBEE4622092987B00C3C78E /* Pods_HouseMonitorTests.framework in Frameworks */,
+				AEBEE4642092987B00C3C78E /* Pods_HouseMonitorUITests.framework in Frameworks */,
+				AEBEE4662092987B00C3C78E /* Realm.framework in Frameworks */,
+				AEBEE4682092987B00C3C78E /* RealmSwift.framework in Frameworks */,
+				AEBEE46A2092987B00C3C78E /* UICountingLabel.framework in Frameworks */,
 				6BEF44ED3F1BAF308C12D041 /* Pods_HouseMonitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A909DDCB269437BE25DF2006 /* Pods_HouseMonitorTests.framework in Frameworks */,
+				75940E921AF260A533140FD1 /* Pods_HouseMonitorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +116,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				867F65E7AF5436F4BEFFA982 /* Pods_HouseMonitorUITests.framework in Frameworks */,
+				FA57DB1EE8FABC6AFF07E2C4 /* Pods_HouseMonitorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +219,14 @@
 		F20B7DFD859A070E6EA6A18A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEBEE45B2092987B00C3C78E /* KLCPopup.framework */,
+				AEBEE45D2092987B00C3C78E /* MMDrawerController.framework */,
+				AEBEE45F2092987B00C3C78E /* PNChart.framework */,
+				AEBEE4612092987B00C3C78E /* Pods_HouseMonitorTests.framework */,
+				AEBEE4632092987B00C3C78E /* Pods_HouseMonitorUITests.framework */,
+				AEBEE4652092987B00C3C78E /* Realm.framework */,
+				AEBEE4672092987B00C3C78E /* RealmSwift.framework */,
+				AEBEE4692092987B00C3C78E /* UICountingLabel.framework */,
 				58540C237AA9B240539E3D04 /* Pods_HouseMonitor.framework */,
 				ECB566DDE605B5FD6CEEEC87 /* Pods_HouseMonitorTests.framework */,
 				79E8D30B2979404DD97FBB76 /* Pods_HouseMonitorUITests.framework */,
