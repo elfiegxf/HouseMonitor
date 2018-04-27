@@ -50,27 +50,34 @@ class BRViewController: UITableViewController {
 	
 		@IBAction func AddBR(_ sender: Any) {
 			
+		var NameField = UITextField()
 		var AddressField = UITextField()
-		
-		let alert = UIAlertController(title: "Add New BorderRouter", message: "Please Type in the Border Router IPv6 Address and it's name", preferredStyle: .alert)
 			
-		let action = UIAlertAction(title: "Add item", style: .default){
+		let alert = UIAlertController(title: "Add New BorderRouter", message: "Please Type in the Border Router IPv6 Address and it's name", preferredStyle: UIAlertControllerStyle.alert)
+			alert.addTextField { (textField : UITextField!) -> Void in
+				textField.placeholder = "Enter New Name"
+			}
+			
+		let addAction = UIAlertAction(title: "Add", style: .default){
 			(action) in
 			// what will happen once the user click the add item button on the UIAlert
 			//let newBR = BorderRouter(IP: AddressField.text!)
 			let newBR = BorderRouter()
-			newBR.Name = AddressField.text!
+			newBR.Name = NameField.text!
 			self.BRArray.append(newBR)
 			self.saveBorderRouter(borderRouter: newBR)
 			self.tableView.reloadData()
 		}
-			
+		
+
 		alert.addTextField{ (alertTextField) in
-			alertTextField.placeholder = "Add new address"
-			AddressField = alertTextField
+			alertTextField.placeholder = "Enter New Address"
+			NameField = alert.textFields![0] as UITextField
+			AddressField = alert.textFields![1] as UITextField
 		}
 			
-		alert.addAction(action)
+		alert.addAction(addAction)
+			alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil))
 		present(alert, animated: true, completion: nil)
 	}
 	
