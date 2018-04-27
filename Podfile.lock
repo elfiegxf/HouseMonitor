@@ -1,0 +1,54 @@
+PODS:
+  - KLCPopup (1.0)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - Realm (3.5.0):
+    - Realm/Headers (= 3.5.0)
+  - Realm/Headers (3.5.0)
+  - RealmSwift (3.5.0):
+    - Realm (= 3.5.0)
+  - SwipeCellKit (2.2.0)
+  - UICountingLabel (1.2.0)
+
+DEPENDENCIES:
+  - KLCPopup
+  - MMDrawerController
+  - PNChart
+  - Realm
+  - RealmSwift
+  - SwipeCellKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - KLCPopup
+    - MMDrawerController
+    - PNChart
+    - Realm
+    - RealmSwift
+    - SwipeCellKit
+    - UICountingLabel
+
+SPEC CHECKSUMS:
+  KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  Realm: 0378021c424e4e2bd6a0e63b27881e929d9b9ad1
+  RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
+  SwipeCellKit: 8ae09401e1137566b187980d824310129233c959
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+
+PODFILE CHECKSUM: bb53d574a48300ae7cc47854d9aa8288ea973498
+
+COCOAPODS: 1.5.0
