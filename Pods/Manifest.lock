@@ -1,54 +1,51 @@
 PODS:
-  - KLCPopup (1.0)
-  - MMDrawerController (0.6.0):
-    - MMDrawerController/Core (= 0.6.0)
-    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
-    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
-    - MMDrawerController/Subclass (= 0.6.0)
-  - MMDrawerController/Core (0.6.0)
-  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
-    - MMDrawerController/Core
-  - MMDrawerController/MMDrawerVisualStates (0.6.0):
-    - MMDrawerController/Core
-  - MMDrawerController/Subclass (0.6.0):
-    - MMDrawerController/Core
+  - DynamicBlurView (2.0.2)
   - PNChart (0.8.9):
     - UICountingLabel (~> 1.2.0)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
   - Realm (3.5.0):
     - Realm/Headers (= 3.5.0)
   - Realm/Headers (3.5.0)
   - RealmSwift (3.5.0):
     - Realm (= 3.5.0)
+  - SideMenu (3.1.5)
+  - SwiftyJSON (4.1.0)
   - SwipeCellKit (2.2.0)
   - UICountingLabel (1.2.0)
 
 DEPENDENCIES:
-  - KLCPopup
-  - MMDrawerController
   - PNChart
+  - PopupDialog
   - Realm
   - RealmSwift
+  - SideMenu
+  - SwiftyJSON
   - SwipeCellKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - KLCPopup
-    - MMDrawerController
+    - DynamicBlurView
     - PNChart
+    - PopupDialog
     - Realm
     - RealmSwift
+    - SideMenu
+    - SwiftyJSON
     - SwipeCellKit
     - UICountingLabel
 
 SPEC CHECKSUMS:
-  KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
-  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
   PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
   Realm: 0378021c424e4e2bd6a0e63b27881e929d9b9ad1
   RealmSwift: 3322562622fda2ad596985ead4d8d8be30cf838c
+  SideMenu: 47dbf9e4d878062d8994aed43f6e4bf6c1fea30b
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   SwipeCellKit: 8ae09401e1137566b187980d824310129233c959
   UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
 
-PODFILE CHECKSUM: bb53d574a48300ae7cc47854d9aa8288ea973498
+PODFILE CHECKSUM: 146c386d03ec80876514b460648d3ea38fc5311e
 
 COCOAPODS: 1.5.0

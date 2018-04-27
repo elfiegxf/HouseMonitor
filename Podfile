@@ -3,11 +3,12 @@ use_frameworks!
 target 'HouseMonitor' do
 
   # Pods for HouseMonitor
+pod 'SwiftyJSON'
 pod 'RealmSwift'
 pod 'Realm'
-pod 'MMDrawerController'
+pod 'SideMenu'
 pod 'PNChart'
-pod 'KLCPopup'
+pod 'PopupDialog'
 pod 'SwipeCellKit'
   target 'HouseMonitorTests' do
     inherit! :search_paths

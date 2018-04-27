@@ -8,18 +8,18 @@
 
 import UIKit
 import RealmSwift
-
+import SideMenu
 
 class BRViewController: UITableViewController {
 	
 	let realm = try! Realm()
 	var BRArray: Results<BorderRouter>?
-	
 //	let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("BorderRouter.plist")
 //
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadBorderRouter()
+		
 	}
 	
 	//MARK: - TableView Datasource Method
@@ -42,8 +42,13 @@ class BRViewController: UITableViewController {
 		
 		print("You selected cell #\(indexPath.row)!")
 	}
-	//MARK: - Drawer bar code
+	//MARK: - Side Menu Source
+
+	
+	
 	@IBAction func toggleEditing(_ sender: Any) {
+	present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
+		dismiss(animated: true, completion: nil)
 	}
 	
 	
