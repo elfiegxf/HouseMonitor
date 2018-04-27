@@ -14,7 +14,6 @@
 		AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6D209172C60022C39D /* AppDelegate.swift */; };
 		AEA6AB70209172C60022C39D /* BRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6F209172C60022C39D /* BRViewController.swift */; };
 		AEA6AB73209172C60022C39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB71209172C60022C39D /* Main.storyboard */; };
-		AEA6AB76209172C60022C39D /* HouseMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB74209172C60022C39D /* HouseMonitor.xcdatamodeld */; };
 		AEA6AB78209172C80022C39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB77209172C80022C39D /* Assets.xcassets */; };
 		AEA6AB7B209172C90022C39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB79209172C80022C39D /* LaunchScreen.storyboard */; };
 		AEA6AB86209172C90022C39D /* HouseMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB85209172C90022C39D /* HouseMonitorTests.swift */; };
@@ -29,6 +28,7 @@
 		AEBEE4662092987B00C3C78E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4652092987B00C3C78E /* Realm.framework */; };
 		AEBEE4682092987B00C3C78E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4672092987B00C3C78E /* RealmSwift.framework */; };
 		AEBEE46A2092987B00C3C78E /* UICountingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4692092987B00C3C78E /* UICountingLabel.framework */; };
+		AEBEE46E20929E3B00C3C78E /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE46D20929E3B00C3C78E /* Sensor.swift */; };
 		FA57DB1EE8FABC6AFF07E2C4 /* Pods_HouseMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEBEE4632092987B00C3C78E /* Pods_HouseMonitorUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,6 @@
 		AEA6AB6D209172C60022C39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA6AB6F209172C60022C39D /* BRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRViewController.swift; sourceTree = "<group>"; };
 		AEA6AB72209172C60022C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AEA6AB75209172C60022C39D /* HouseMonitor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HouseMonitor.xcdatamodel; sourceTree = "<group>"; };
 		AEA6AB77209172C80022C39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA6AB7A209172C80022C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA6AB7C209172C90022C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +80,7 @@
 		AEBEE4652092987B00C3C78E /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBEE4672092987B00C3C78E /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBEE4692092987B00C3C78E /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEBEE46D20929E3B00C3C78E /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
 		B3273E3799F2CB9E723652AB /* Pods-HouseMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitor/Pods-HouseMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		ECB566DDE605B5FD6CEEEC87 /* Pods_HouseMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				AEBEE45320923A6300C3C78E /* BorderRouter.swift */,
+				AEBEE46D20929E3B00C3C78E /* Sensor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,7 +181,6 @@
 				AE176B87209225F5000E19F5 /* Controller */,
 				AE176B86209225E8000E19F5 /* Model */,
 				AEA6AB7C209172C90022C39D /* Info.plist */,
-				AEA6AB74209172C60022C39D /* HouseMonitor.xcdatamodeld */,
 			);
 			path = HouseMonitor;
 			sourceTree = "<group>";
@@ -455,10 +455,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBEE45A209281A900C3C78E /* SensorViewController.swift in Sources */,
+				AEBEE46E20929E3B00C3C78E /* Sensor.swift in Sources */,
 				AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */,
 				AEA6AB70209172C60022C39D /* BRViewController.swift in Sources */,
 				AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */,
-				AEA6AB76209172C60022C39D /* HouseMonitor.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,7 +635,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -651,7 +654,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -668,7 +674,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -686,7 +696,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -703,7 +717,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -720,7 +738,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJKNA627HQ;
 				INFOPLIST_FILE = HouseMonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = elfie.HouseMonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -769,19 +791,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AEA6AB74209172C60022C39D /* HouseMonitor.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AEA6AB75209172C60022C39D /* HouseMonitor.xcdatamodel */,
-			);
-			currentVersion = AEA6AB75209172C60022C39D /* HouseMonitor.xcdatamodel */;
-			path = HouseMonitor.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AEA6AB62209172C60022C39D /* Project object */;
 }

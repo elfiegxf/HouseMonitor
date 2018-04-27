@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
+
 
 class BRViewController: UITableViewController {
+	
+	let realm = try! Realm()
 	
 	var BRArray = [BorderRouter]()
 	let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("BorderRouter.plist")
@@ -31,7 +35,7 @@ class BRViewController: UITableViewController {
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "BorderRouters", for: indexPath)
-		cell.textLabel?.text = BRArray[indexPath.row].getName()
+		cell.textLabel?.text = BRArray[indexPath.row].Name
 		return cell
 	}
 	//Mark - TableView Delegate Methods
@@ -53,13 +57,15 @@ class BRViewController: UITableViewController {
 		let action = UIAlertAction(title: "Add item", style: .default){
 			(action) in
 			// what will happen once the user click the add item button on the UIAlert
-			let newBR = BorderRouter(IP: AddressField.text!)
-		    self.BRArray.append(newBR)
-			self.saveBorderRouter()
+			//let newBR = BorderRouter(IP: AddressField.text!)
+			let newBR = BorderRouter()
+			newBR.Name = AddressField.text!
+			self.BRArray.append(newBR)
+			self.saveBorderRouter(borderRouter: newBR)
 			self.tableView.reloadData()
 		}
 			
-		alert.addTextField { (alertTextField) in
+		alert.addTextField{ (alertTextField) in
 			alertTextField.placeholder = "Add new address"
 			AddressField = alertTextField
 		}
@@ -69,24 +75,20 @@ class BRViewController: UITableViewController {
 	}
 	
 	
-	func saveBorderRouter(){
-		let encoder = PropertyListEncoder()
+	func saveBorderRouter(borderRouter: BorderRouter){
 		do{
-			let data = try encoder.encode(self.BRArray)
-			try data.write(to: self.dataFilePath!)
-		}catch{
-			print("Error Encoding Array!, \(error)")
-	}
+			try realm.write {
+				realm.add(borderRouter)
+			}
+		} catch{
+			print( "Error saving borderRouter\(error)")
+		}
 	}
 	func loadBorderRouter(){
-		if let data = try? Data(contentsOf: dataFilePath!){
-			let decoder = PropertyListDecoder()
-			do {
-				BRArray = try decoder.decode([BorderRouter].self, from: data)
-			}catch{
-				print("Load Error: \(error)")
-			}
-		}
+//		do{
+//			try
+//		}
+		
 	}
 }
 
