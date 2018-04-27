@@ -13,14 +13,13 @@ import RealmSwift
 class BRViewController: UITableViewController {
 	
 	let realm = try! Realm()
+	var BRArray: Results<BorderRouter>?
 	
-	var BRArray = [BorderRouter]()
 	let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("BorderRouter.plist")
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadBorderRouter()
-		
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -29,13 +28,13 @@ class BRViewController: UITableViewController {
 	}
 	//Mark - TableView Datasource Method
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return BRArray.count
+		return BRArray?.count ?? 1
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "BorderRouters", for: indexPath)
-		cell.textLabel?.text = BRArray[indexPath.row].Name
+		cell.textLabel?.text = BRArray?[indexPath.row].Name ?? "No BorderRouter Added Yet"
 		return cell
 	}
 	//Mark - TableView Delegate Methods
@@ -64,7 +63,7 @@ class BRViewController: UITableViewController {
 			//let newBR = BorderRouter(IP: AddressField.text!)
 			let newBR = BorderRouter()
 			newBR.Name = NameField.text!
-			self.BRArray.append(newBR)
+			newBR.IP = AddressField.text!
 			self.saveBorderRouter(borderRouter: newBR)
 			self.tableView.reloadData()
 		}
@@ -92,10 +91,9 @@ class BRViewController: UITableViewController {
 		}
 	}
 	func loadBorderRouter(){
-//		do{
-//			try
-//		}
-		
+		let loadArray = realm.objects(BorderRouter.self)
+		BRArray = loadArray
+		tableView.reloadData()
 	}
 }
 
