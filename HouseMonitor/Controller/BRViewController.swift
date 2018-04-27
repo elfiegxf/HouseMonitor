@@ -15,18 +15,14 @@ class BRViewController: UITableViewController {
 	let realm = try! Realm()
 	var BRArray: Results<BorderRouter>?
 	
-	let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("BorderRouter.plist")
-	
+//	let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("BorderRouter.plist")
+//
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		loadBorderRouter()
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
-	//Mark - TableView Datasource Method
+	
+	//MARK: - TableView Datasource Method
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return BRArray?.count ?? 1
 	}
@@ -37,16 +33,19 @@ class BRViewController: UITableViewController {
 		cell.textLabel?.text = BRArray?[indexPath.row].Name ?? "No BorderRouter Added Yet"
 		return cell
 	}
-	//Mark - TableView Delegate Methods
-	// click cell and get content printed
+	
+	var SensorTitle: String!
+	//MARK: - TableView Delegate Methods
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.cellForRow(at: indexPath)?.accessoryType = .disclosureIndicator
 		tableView.deselectRow(at: indexPath, animated: true)
+		
+		print("You selected cell #\(indexPath.row)!")
 	}
 	
-	//Mark - Table Add Border Router button
+
 	
-	
+	//MARK: - Data Manipulate Methods
 		@IBAction func AddBR(_ sender: Any) {
 			
 		var NameField = UITextField()
@@ -80,7 +79,7 @@ class BRViewController: UITableViewController {
 		present(alert, animated: true, completion: nil)
 	}
 	
-	
+	// function - Save items to database
 	func saveBorderRouter(borderRouter: BorderRouter){
 		do{
 			try realm.write {
@@ -90,10 +89,29 @@ class BRViewController: UITableViewController {
 			print( "Error saving borderRouter\(error)")
 		}
 	}
+	//function - Load items from database
 	func loadBorderRouter(){
 		let loadArray = realm.objects(BorderRouter.self)
 		BRArray = loadArray
 		tableView.reloadData()
 	}
 }
+
+//MARK: - Search bar methods
+extension BRViewController: UISearchBarDelegate{
+	func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
+//		let request : realm.objects(BorderRouter).filter(
+	}
+	
+	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
+		if searchBar.text? .count == 0{
+			loadBorderRouter()
+			DispatchQueue.main.async {
+				searchBar.resignFirstResponder()
+			}
+		}
+	}
+	
+}
+
 

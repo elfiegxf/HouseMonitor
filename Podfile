@@ -8,7 +8,7 @@ pod 'Realm'
 pod 'MMDrawerController'
 pod 'PNChart'
 pod 'KLCPopup'
-
+pod 'SwipeCellKit'
   target 'HouseMonitorTests' do
     inherit! :search_paths
     # Pods for testing
