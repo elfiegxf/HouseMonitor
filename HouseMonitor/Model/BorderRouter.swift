@@ -11,6 +11,5 @@ import RealmSwift
 class BorderRouter: Object{
 	@objc dynamic var Name : String = ""
 	@objc dynamic var IP : String = ""
-	let sensors = List<Sensor>()
-	
+	var sensors = List<Sensor>()
 }

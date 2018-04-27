@@ -13,7 +13,7 @@ import SideMenu
 class BRViewController: UITableViewController {
 	
 	let realm = try! Realm()
-	var BRArray: Results<BorderRouter>?
+	var borderRouters: Results<BorderRouter>?
 //	let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("BorderRouter.plist")
 //
 	override func viewDidLoad() {
@@ -24,28 +24,37 @@ class BRViewController: UITableViewController {
 	
 	//MARK: - TableView Datasource Method
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return BRArray?.count ?? 1
+		return borderRouters?.count ?? 1
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "BorderRouters", for: indexPath)
-		cell.textLabel?.text = BRArray?[indexPath.row].Name ?? "No BorderRouter Added Yet"
+		cell.textLabel?.text = borderRouters?[indexPath.row].Name ?? "No BorderRouter Added Yet"
 		return cell
 	}
 	
 	var SensorTitle: String!
+	
+	
 	//MARK: - TableView Delegate Methods
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		tableView.cellForRow(at: indexPath)?.accessoryType = .disclosureIndicator
-		tableView.deselectRow(at: indexPath, animated: true)
 		
+		performSegue(withIdentifier: "goToSensors", sender: self)
 		print("You selected cell #\(indexPath.row)!")
 	}
-	//MARK: - Side Menu Source
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "goToSensors"{
+			let destinationVC = segue.destination as! SensorViewController
+		
+			if let indexPath = tableView.indexPathForSelectedRow{
+			destinationVC.selectedBR = (borderRouters?[indexPath.row])!
+			}
+		}
+		
+	}
 
-	
-	
+	//MARK: - Side Menu Action
 	@IBAction func toggleEditing(_ sender: Any) {
 	present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
 		dismiss(animated: true, completion: nil)
@@ -70,6 +79,18 @@ class BRViewController: UITableViewController {
 			let newBR = BorderRouter()
 			newBR.Name = NameField.text!
 			newBR.IP = AddressField.text!
+			let s0 = Sensor()
+			s0.Name = "this"
+			let s1 = Sensor()
+			s1.Name = "is"
+			let s2 = Sensor()
+			s2.Name = "a"
+			let s3 = Sensor()
+			s3.Name = "test"
+			newBR.sensors.append(s0)
+			newBR.sensors.append(s1)
+			newBR.sensors.append(s2)
+			newBR.sensors.append(s3)
 			self.saveBorderRouter(borderRouter: newBR)
 			self.tableView.reloadData()
 		}
@@ -99,7 +120,7 @@ class BRViewController: UITableViewController {
 	//function - Load items from database
 	func loadBorderRouter(){
 		let loadArray = realm.objects(BorderRouter.self)
-		BRArray = loadArray
+		borderRouters = loadArray
 		tableView.reloadData()
 	}
 }
@@ -107,9 +128,9 @@ class BRViewController: UITableViewController {
 //MARK: - Search bar methods
 extension BRViewController: UISearchBarDelegate{
 	func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
-//		let request : realm.objects(BorderRouter).filter(
+			borderRouters = borderRouters?.filter("Name CONTAINS[cd] %@", searchBar.text!)
+		tableView.reloadData()
 	}
-	
 	func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
 		if searchBar.text? .count == 0{
 			loadBorderRouter()
