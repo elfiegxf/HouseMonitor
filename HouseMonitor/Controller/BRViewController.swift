@@ -42,8 +42,10 @@ class BRViewController: UITableViewController {
 		
 		print("You selected cell #\(indexPath.row)!")
 	}
+	//MARK: - Drawer bar code
+	@IBAction func toggleEditing(_ sender: Any) {
+	}
 	
-
 	
 	//MARK: - Data Manipulate Methods
 		@IBAction func AddBR(_ sender: Any) {
