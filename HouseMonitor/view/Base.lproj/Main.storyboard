@@ -17,16 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="lvw-wJ-c7Z">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="search" id="lvw-wJ-c7Z">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <outlet property="delegate" destination="NmL-kS-J7t" id="8Rf-rD-OPr"/>
+                                <outlet property="delegate" destination="NmL-kS-J7t" id="SIJ-eI-Xwd"/>
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BorderRouters" textLabel="N8y-og-JdH" style="IBUITableViewCellStyleDefault" id="Zjs-2i-NIj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BorderRouters" textLabel="N8y-og-JdH" style="IBUITableViewCellStyleDefault" id="Zjs-2i-NIj" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zjs-2i-NIj" id="Io7-Ys-AGR">
@@ -46,14 +46,13 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="NmL-kS-J7t" id="5Fc-wD-il0"/>
-                            <outlet property="delegate" destination="NmL-kS-J7t" id="A9V-kb-PCw"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="HomeMonitor" id="JX8-0X-CND">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;&lt;" id="w4g-gl-uEL">
+                        <barButtonItem key="leftBarButtonItem" title="MORE" id="w4g-gl-uEL">
                             <connections>
                                 <action selector="toggleEditing:" destination="NmL-kS-J7t" id="IJh-z9-tcY"/>
-                                <segue destination="PGY-BH-jFi" kind="show" id="BRb-dM-xRN"/>
+                                <segue destination="PGY-BH-jFi" kind="show" identifier="sideMenu" id="BRb-dM-xRN"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OCc-5t-X43">
@@ -63,23 +62,23 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="kl3-om-l7a" kind="show" id="hKK-7e-huz"/>
+                        <segue destination="kl3-om-l7a" kind="show" identifier="goToSensors" id="hKK-7e-huz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1p-LG-AJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1488.8" y="85.907046476761622"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Sensor View Controller-->
         <scene sceneID="3op-4G-gsr">
             <objects>
-                <tableViewController id="kl3-om-l7a" sceneMemberID="viewController">
+                <tableViewController id="kl3-om-l7a" customClass="SensorViewController" customModule="HouseMonitor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DMR-Gx-vJW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qjp-jx-pdN">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Sensors" id="Qjp-jx-pdN" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qjp-jx-pdN" id="FQR-JG-sSo">

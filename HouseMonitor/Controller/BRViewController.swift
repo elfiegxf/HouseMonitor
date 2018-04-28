@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import SideMenu
+import SwipeCellKit
 
 class BRViewController: UITableViewController {
 	
@@ -18,23 +19,32 @@ class BRViewController: UITableViewController {
 //
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		tableView.rowHeight = 60.0
 		loadBorderRouter()
 		
 	}
 	
 	//MARK: - TableView Datasource Method
+	
+	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return borderRouters?.count ?? 1
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		
-		let cell = tableView.dequeueReusableCell(withIdentifier: "BorderRouters", for: indexPath)
+		let cell = tableView.dequeueReusableCell(withIdentifier: "BorderRouters", for: indexPath) as! SwipeTableViewCell
 		cell.textLabel?.text = borderRouters?[indexPath.row].Name ?? "No BorderRouter Added Yet"
+		cell.delegate = self
 		return cell
 	}
 	
-	var SensorTitle: String!
+	
+//	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//		let cell = tableView.dequeueReusableCell(withIdentifier: "BorderRouters", for: indexPath)
+//		cell.textLabel?.text = borderRouters?[indexPath.row].Name ?? "No BorderRouter Added Yet"
+//		return cell
+//	}
 	
 	
 	//MARK: - TableView Delegate Methods
@@ -142,4 +152,29 @@ extension BRViewController: UISearchBarDelegate{
 	
 }
 
+extension BRViewController: SwipeTableViewCellDelegate{
+	func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+		guard orientation == .right else { return nil }
+		
+		let deleteAction = SwipeAction(style: .destructive, title: "Delete"){ action, indexPath in
+			// handle action by updating model with deletion
+			if let deletedBR = self.borderRouters?[indexPath.row]{
+				do {
+					try self.realm.write {
+						self.realm.delete(deletedBR)
+						tableView.reloadData()
+					}
+				} catch {
+					print("Error Deleting Item, \(error)")
+				}
+			}
+		
+	}
+		
+		// customize the action appearance
+		deleteAction.image = UIImage(named: "Delete")
+		
+		return [deleteAction]
+	}
+}
 

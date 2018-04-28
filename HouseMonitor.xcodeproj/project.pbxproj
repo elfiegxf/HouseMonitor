@@ -19,10 +19,10 @@
 		AE2A137A20939E7300C60EC2 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A137920939E7300C60EC2 /* RealmSwift.framework */; };
 		AE2A137C20939E7300C60EC2 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A137B20939E7300C60EC2 /* SideMenu.framework */; };
 		AE2A137E20939E7300C60EC2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A137D20939E7300C60EC2 /* SwiftyJSON.framework */; };
+		AE2A13802093E2FA00C60EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2A137F2093E2FA00C60EC2 /* Assets.xcassets */; };
 		AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6D209172C60022C39D /* AppDelegate.swift */; };
 		AEA6AB70209172C60022C39D /* BRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6F209172C60022C39D /* BRViewController.swift */; };
 		AEA6AB73209172C60022C39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB71209172C60022C39D /* Main.storyboard */; };
-		AEA6AB78209172C80022C39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB77209172C80022C39D /* Assets.xcassets */; };
 		AEA6AB7B209172C90022C39D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB79209172C80022C39D /* LaunchScreen.storyboard */; };
 		AEA6AB86209172C90022C39D /* HouseMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB85209172C90022C39D /* HouseMonitorTests.swift */; };
 		AEA6AB91209172C90022C39D /* HouseMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB90209172C90022C39D /* HouseMonitorUITests.swift */; };
@@ -66,11 +66,11 @@
 		AE2A137920939E7300C60EC2 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2A137B20939E7300C60EC2 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2A137D20939E7300C60EC2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2A137F2093E2FA00C60EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HouseMonitor/view/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		AEA6AB6A209172C60022C39D /* HouseMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA6AB6D209172C60022C39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA6AB6F209172C60022C39D /* BRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRViewController.swift; sourceTree = "<group>"; };
 		AEA6AB72209172C60022C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AEA6AB77209172C80022C39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA6AB7A209172C80022C39D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA6AB7C209172C90022C39D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEA6AB81209172C90022C39D /* HouseMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HouseMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,9 +163,9 @@
 		AE176B8820922607000E19F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE2A137F2093E2FA00C60EC2 /* Assets.xcassets */,
 				AEA6AB71209172C60022C39D /* Main.storyboard */,
 				AEA6AB79209172C80022C39D /* LaunchScreen.storyboard */,
-				AEA6AB77209172C80022C39D /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,7 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA6AB7B209172C90022C39D /* LaunchScreen.storyboard in Resources */,
-				AEA6AB78209172C80022C39D /* Assets.xcassets in Resources */,
+				AE2A13802093E2FA00C60EC2 /* Assets.xcassets in Resources */,
 				AEA6AB73209172C60022C39D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
