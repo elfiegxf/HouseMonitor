@@ -43,9 +43,22 @@ class SensorViewController: UITableViewController {
 
 	//MARK: - TableView Delegate Methods
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		
+		performSegue(withIdentifier: "goToData", sender: self)
+		print("You selected cell #\(indexPath.row)!")
 	}
 	
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "goToData"{
+			let destinationVC = segue.destination as! DataViewController
+			
+			if let indexPath = tableView.indexPathForSelectedRow{
+				destinationVC.selectedSensor = (sensors?[indexPath.row])!
+			}
+			
+		}
+		
+	}
 	//MARK: - Data Manipulation Methods
 	func loadSensors(){
 		sensors = selectedBR?.sensors

@@ -29,6 +29,7 @@
 		AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE45320923A6300C3C78E /* BorderRouter.swift */; };
 		AEBEE45A209281A900C3C78E /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE459209281A900C3C78E /* SensorViewController.swift */; };
 		AEBEE46E20929E3B00C3C78E /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE46D20929E3B00C3C78E /* Sensor.swift */; };
+		AEC5AC4D2094F2E200538624 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5AC4C2094F2E100538624 /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		AEBEE4672092987B00C3C78E /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBEE4692092987B00C3C78E /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBEE46D20929E3B00C3C78E /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		AEC5AC4C2094F2E100538624 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		E049201744B72E275683C9FB /* Pods-HouseMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitorTests/Pods-HouseMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF45758B0AB5CF7857447AC6 /* Pods-HouseMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitor/Pods-HouseMonitor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 		AE176B87209225F5000E19F5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AEC5AC4C2094F2E100538624 /* DataViewController.swift */,
 				AEA6AB6F209172C60022C39D /* BRViewController.swift */,
 				AEBEE459209281A900C3C78E /* SensorViewController.swift */,
 				AE2A136B20939BF700C60EC2 /* LeftViewController.swift */,
@@ -474,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBEE45A209281A900C3C78E /* SensorViewController.swift in Sources */,
+				AEC5AC4D2094F2E200538624 /* DataViewController.swift in Sources */,
 				AEBEE46E20929E3B00C3C78E /* Sensor.swift in Sources */,
 				AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */,
 				AE2A136C20939BF700C60EC2 /* LeftViewController.swift in Sources */,

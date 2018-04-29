@@ -11,6 +11,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>KLCPopup.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>MMDrawerController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>PNChart.xcscheme</key>
 		<dict>
 			<key>isShown</key>

@@ -11,12 +11,11 @@ import RealmSwift
 import SideMenu
 import SwipeCellKit
 
-class BRViewController: UITableViewController {
+class BRViewController: UITableViewController{
 	
 	let realm = try! Realm()
 	var borderRouters: Results<BorderRouter>?
-//	let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("BorderRouter.plist")
-//
+	open var menuAnimationOptions: UIViewAnimationOptions = .curveEaseInOut
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		tableView.rowHeight = 60.0
@@ -25,7 +24,6 @@ class BRViewController: UITableViewController {
 	}
 	
 	//MARK: - TableView Datasource Method
-	
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return borderRouters?.count ?? 1
@@ -37,15 +35,6 @@ class BRViewController: UITableViewController {
 		cell.delegate = self
 		return cell
 	}
-	
-	
-//	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//		let cell = tableView.dequeueReusableCell(withIdentifier: "BorderRouters", for: indexPath)
-//		cell.textLabel?.text = borderRouters?[indexPath.row].Name ?? "No BorderRouter Added Yet"
-//		return cell
-//	}
-	
 	
 	//MARK: - TableView Delegate Methods
 	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -68,6 +57,8 @@ class BRViewController: UITableViewController {
 	@IBAction func toggleEditing(_ sender: Any) {
 	present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
 		dismiss(animated: true, completion: nil)
+		
+		
 	}
 	
 	
@@ -86,21 +77,10 @@ class BRViewController: UITableViewController {
 			(action) in
 			// what will happen once the user click the add item button on the UIAlert
 			//let newBR = BorderRouter(IP: AddressField.text!)
-			let newBR = BorderRouter()
+			var newBR = BorderRouter()
 			newBR.Name = NameField.text!
 			newBR.IP = AddressField.text!
-			let s0 = Sensor()
-			s0.Name = "this"
-			let s1 = Sensor()
-			s1.Name = "is"
-			let s2 = Sensor()
-			s2.Name = "a"
-			let s3 = Sensor()
-			s3.Name = "test"
-			newBR.sensors.append(s0)
-			newBR.sensors.append(s1)
-			newBR.sensors.append(s2)
-			newBR.sensors.append(s3)
+			newBR = self.AddDummyData(newBR)
 			self.saveBorderRouter(borderRouter: newBR)
 			self.tableView.reloadData()
 		}
@@ -117,7 +97,28 @@ class BRViewController: UITableViewController {
 		present(alert, animated: true, completion: nil)
 	}
 	
+	//MARK : Helper functions
+	func AddDummyData(_ BR : BorderRouter) -> BorderRouter{
+		let s0 = Sensor()
+		s0.Name = "this"
+		s0.IP = "fe80::1ff:fe23:4567:890a"
+		let s1 = Sensor()
+		s1.Name = "is"
+		s1.IP = "fe80::1ff:fe23:4567:890a"
+		let s2 = Sensor()
+		s2.Name = "a"
+		s2.IP = "fe80::1ff:fe23:4567:890a"
+		let s3 = Sensor()
+		s3.Name = "test"
+		s3.IP = "fe80::1ff:fe23:4567:890a"
+		BR.sensors.append(s0)
+		BR.sensors.append(s1)
+		BR.sensors.append(s2)
+		BR.sensors.append(s3)
+		return BR
+	}
 	// function - Save items to database
+	
 	func saveBorderRouter(borderRouter: BorderRouter){
 		do{
 			try realm.write {
