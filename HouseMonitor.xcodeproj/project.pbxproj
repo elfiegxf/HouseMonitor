@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		07CEC7AB4EA088D0C21C0309 /* Pods_HouseMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5D05189D357BEBD6F44CBB /* Pods_HouseMonitorUITests.framework */; };
 		266A6E87FEF655D37419391A /* Pods_HouseMonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB5E96DC70ADC7E61F56EC4 /* Pods_HouseMonitorTests.framework */; };
+		AE05C5A1209A3461007210F7 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5A0209A3461007210F7 /* FirstPageViewController.swift */; };
+		AE05C5AF209A38BA007210F7 /* PNGenericChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5A3209A38BA007210F7 /* PNGenericChart.swift */; };
+		AE05C5B0209A38BA007210F7 /* PNLineChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5A4209A38BA007210F7 /* PNLineChartData.swift */; };
+		AE05C5B1209A38BA007210F7 /* PNLineChartDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5A5209A38BA007210F7 /* PNLineChartDataItem.swift */; };
+		AE05C5B2209A38BA007210F7 /* PNChartSwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AE05C5A6209A38BA007210F7 /* PNChartSwift.podspec */; };
+		AE05C5B3209A38BA007210F7 /* PNPieChartDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5A7209A38BA007210F7 /* PNPieChartDataItem.swift */; };
+		AE05C5B4209A38BA007210F7 /* PNColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5A8209A38BA007210F7 /* PNColor.swift */; };
+		AE05C5B5209A38BA007210F7 /* PNBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5A9209A38BA007210F7 /* PNBar.swift */; };
+		AE05C5B6209A38BA007210F7 /* PNValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5AA209A38BA007210F7 /* PNValue.swift */; };
+		AE05C5B7209A38BA007210F7 /* PNBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5AB209A38BA007210F7 /* PNBarChart.swift */; };
+		AE05C5B8209A38BA007210F7 /* PNChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5AC209A38BA007210F7 /* PNChartLabel.swift */; };
+		AE05C5B9209A38BA007210F7 /* PNPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5AD209A38BA007210F7 /* PNPieChart.swift */; };
+		AE05C5BA209A38BA007210F7 /* PNLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5AE209A38BA007210F7 /* PNLineChart.swift */; };
+		AE05C5BC209A4C2C007210F7 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05C5BB209A4C2C007210F7 /* SecondPageViewController.swift */; };
 		AE2A136C20939BF700C60EC2 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2A136B20939BF700C60EC2 /* LeftViewController.swift */; };
 		AE2A136E20939E7300C60EC2 /* PNChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A136D20939E7300C60EC2 /* PNChart.framework */; };
 		AE2A137020939E7300C60EC2 /* Pods_HouseMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A136F20939E7300C60EC2 /* Pods_HouseMonitor.framework */; };
@@ -20,6 +34,7 @@
 		AE2A137C20939E7300C60EC2 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A137B20939E7300C60EC2 /* SideMenu.framework */; };
 		AE2A137E20939E7300C60EC2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A137D20939E7300C60EC2 /* SwiftyJSON.framework */; };
 		AE2A13802093E2FA00C60EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2A137F2093E2FA00C60EC2 /* Assets.xcassets */; };
+		AE729411209639400049B0B0 /* DataPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE729410209639400049B0B0 /* DataPageViewController.swift */; };
 		AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6D209172C60022C39D /* AppDelegate.swift */; };
 		AEA6AB70209172C60022C39D /* BRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA6AB6F209172C60022C39D /* BRViewController.swift */; };
 		AEA6AB73209172C60022C39D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA6AB71209172C60022C39D /* Main.storyboard */; };
@@ -30,6 +45,7 @@
 		AEBEE45A209281A900C3C78E /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE459209281A900C3C78E /* SensorViewController.swift */; };
 		AEBEE46E20929E3B00C3C78E /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBEE46D20929E3B00C3C78E /* Sensor.swift */; };
 		AEC5AC4D2094F2E200538624 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5AC4C2094F2E100538624 /* DataViewController.swift */; };
+		AEDC4157209605EE00E46D3C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDC4156209605EE00E46D3C /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +73,20 @@
 		1E5D05189D357BEBD6F44CBB /* Pods_HouseMonitorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouseMonitorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		778895B0850369F5E09FF780 /* Pods-HouseMonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitorUITests/Pods-HouseMonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99612AE24429EC5E497836B2 /* Pods-HouseMonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitorUITests/Pods-HouseMonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE05C5A0209A3461007210F7 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		AE05C5A3209A38BA007210F7 /* PNGenericChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNGenericChart.swift; sourceTree = "<group>"; };
+		AE05C5A4209A38BA007210F7 /* PNLineChartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNLineChartData.swift; sourceTree = "<group>"; };
+		AE05C5A5209A38BA007210F7 /* PNLineChartDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNLineChartDataItem.swift; sourceTree = "<group>"; };
+		AE05C5A6209A38BA007210F7 /* PNChartSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PNChartSwift.podspec; sourceTree = "<group>"; };
+		AE05C5A7209A38BA007210F7 /* PNPieChartDataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNPieChartDataItem.swift; sourceTree = "<group>"; };
+		AE05C5A8209A38BA007210F7 /* PNColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNColor.swift; sourceTree = "<group>"; };
+		AE05C5A9209A38BA007210F7 /* PNBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNBar.swift; sourceTree = "<group>"; };
+		AE05C5AA209A38BA007210F7 /* PNValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNValue.swift; sourceTree = "<group>"; };
+		AE05C5AB209A38BA007210F7 /* PNBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNBarChart.swift; sourceTree = "<group>"; };
+		AE05C5AC209A38BA007210F7 /* PNChartLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNChartLabel.swift; sourceTree = "<group>"; };
+		AE05C5AD209A38BA007210F7 /* PNPieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNPieChart.swift; sourceTree = "<group>"; };
+		AE05C5AE209A38BA007210F7 /* PNLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNLineChart.swift; sourceTree = "<group>"; };
+		AE05C5BB209A4C2C007210F7 /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 		AE2A136B20939BF700C60EC2 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		AE2A136D20939E7300C60EC2 /* PNChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PNChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2A136F20939E7300C60EC2 /* Pods_HouseMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_HouseMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +98,7 @@
 		AE2A137B20939E7300C60EC2 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2A137D20939E7300C60EC2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2A137F2093E2FA00C60EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HouseMonitor/view/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		AE729410209639400049B0B0 /* DataPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPageViewController.swift; sourceTree = "<group>"; };
 		AEA6AB6A209172C60022C39D /* HouseMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA6AB6D209172C60022C39D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA6AB6F209172C60022C39D /* BRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +121,7 @@
 		AEBEE4692092987B00C3C78E /* UICountingLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UICountingLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBEE46D20929E3B00C3C78E /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
 		AEC5AC4C2094F2E100538624 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		AEDC4156209605EE00E46D3C /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		E049201744B72E275683C9FB /* Pods-HouseMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitorTests/Pods-HouseMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF45758B0AB5CF7857447AC6 /* Pods-HouseMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HouseMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HouseMonitor/Pods-HouseMonitor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,9 +175,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AE05C5A2209A38BA007210F7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AE05C5A3209A38BA007210F7 /* PNGenericChart.swift */,
+				AE05C5A4209A38BA007210F7 /* PNLineChartData.swift */,
+				AE05C5A5209A38BA007210F7 /* PNLineChartDataItem.swift */,
+				AE05C5A6209A38BA007210F7 /* PNChartSwift.podspec */,
+				AE05C5A7209A38BA007210F7 /* PNPieChartDataItem.swift */,
+				AE05C5A8209A38BA007210F7 /* PNColor.swift */,
+				AE05C5A9209A38BA007210F7 /* PNBar.swift */,
+				AE05C5AA209A38BA007210F7 /* PNValue.swift */,
+				AE05C5AB209A38BA007210F7 /* PNBarChart.swift */,
+				AE05C5AC209A38BA007210F7 /* PNChartLabel.swift */,
+				AE05C5AD209A38BA007210F7 /* PNPieChart.swift */,
+				AE05C5AE209A38BA007210F7 /* PNLineChart.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		AE176B86209225E8000E19F5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AEDC4156209605EE00E46D3C /* Data.swift */,
 				AEBEE45320923A6300C3C78E /* BorderRouter.swift */,
 				AEBEE46D20929E3B00C3C78E /* Sensor.swift */,
 			);
@@ -159,6 +211,9 @@
 				AEA6AB6F209172C60022C39D /* BRViewController.swift */,
 				AEBEE459209281A900C3C78E /* SensorViewController.swift */,
 				AE2A136B20939BF700C60EC2 /* LeftViewController.swift */,
+				AE729410209639400049B0B0 /* DataPageViewController.swift */,
+				AE05C5A0209A3461007210F7 /* FirstPageViewController.swift */,
+				AE05C5BB209A4C2C007210F7 /* SecondPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +253,7 @@
 		AEA6AB6C209172C60022C39D /* HouseMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				AE05C5A2209A38BA007210F7 /* Source */,
 				AEA6AB6D209172C60022C39D /* AppDelegate.swift */,
 				AE176B8820922607000E19F5 /* View */,
 				AE176B87209225F5000E19F5 /* Controller */,
@@ -359,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA6AB7B209172C90022C39D /* LaunchScreen.storyboard in Resources */,
+				AE05C5B2209A38BA007210F7 /* PNChartSwift.podspec in Resources */,
 				AE2A13802093E2FA00C60EC2 /* Assets.xcassets in Resources */,
 				AEA6AB73209172C60022C39D /* Main.storyboard in Resources */,
 			);
@@ -476,13 +533,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE05C5AF209A38BA007210F7 /* PNGenericChart.swift in Sources */,
 				AEBEE45A209281A900C3C78E /* SensorViewController.swift in Sources */,
+				AE05C5B0209A38BA007210F7 /* PNLineChartData.swift in Sources */,
 				AEC5AC4D2094F2E200538624 /* DataViewController.swift in Sources */,
+				AE05C5B3209A38BA007210F7 /* PNPieChartDataItem.swift in Sources */,
+				AE05C5BC209A4C2C007210F7 /* SecondPageViewController.swift in Sources */,
+				AE05C5A1209A3461007210F7 /* FirstPageViewController.swift in Sources */,
 				AEBEE46E20929E3B00C3C78E /* Sensor.swift in Sources */,
+				AE05C5B1209A38BA007210F7 /* PNLineChartDataItem.swift in Sources */,
+				AE05C5B4209A38BA007210F7 /* PNColor.swift in Sources */,
+				AE05C5B9209A38BA007210F7 /* PNPieChart.swift in Sources */,
+				AE05C5B5209A38BA007210F7 /* PNBar.swift in Sources */,
 				AEBEE45420923A6300C3C78E /* BorderRouter.swift in Sources */,
+				AE05C5BA209A38BA007210F7 /* PNLineChart.swift in Sources */,
+				AE729411209639400049B0B0 /* DataPageViewController.swift in Sources */,
 				AE2A136C20939BF700C60EC2 /* LeftViewController.swift in Sources */,
+				AE05C5B6209A38BA007210F7 /* PNValue.swift in Sources */,
 				AEA6AB70209172C60022C39D /* BRViewController.swift in Sources */,
 				AEA6AB6E209172C60022C39D /* AppDelegate.swift in Sources */,
+				AE05C5B7209A38BA007210F7 /* PNBarChart.swift in Sources */,
+				AE05C5B8209A38BA007210F7 /* PNChartLabel.swift in Sources */,
+				AEDC4157209605EE00E46D3C /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
